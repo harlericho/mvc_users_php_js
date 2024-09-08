@@ -9,7 +9,8 @@
 
   <!-- Bootstrap CSS v5.2.1 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-
+  <!-- Favicon logo php desde la web -->
+  <link rel="icon" type="image/png" href="https://www.php.net/favicon.ico">
 </head>
 
 <body>
@@ -22,15 +23,15 @@
             <form id="form" action="javascript:void(0);" method="post" onsubmit="app.submit()">
               <input type="hidden" id="id" name="id">
               <div class="mb-3">
-                <label for="name" class="form-label">Name</label>
+                <label for="name" class="form-label">Nombres:</label>
                 <input type="text" class="form-control" id="name" name="name" autofocus>
               </div>
               <div class="mb-3">
-                <label for="email" class="form-label">Email</label>
+                <label for="email" class="form-label">Email:</label>
                 <input type="email" class="form-control" id="email" name="email">
               </div>
-              <button type="submit" class="btn btn-primary btn-sm">Submit</button>
-              <button type="button" class="btn btn-success btn-sm" onclick="app.clean()">Clean</button>
+              <button type="submit" class="btn btn-primary btn-sm" id="btnSubmit">Guardar</button>
+              <button type="button" class="btn btn-success btn-sm" onclick="app.clean()">Nuevo</button>
             </form>
           </div>
         </div>
@@ -44,7 +45,7 @@
                 <thead>
                   <tr>
                     <th scope="col">#</th>
-                    <th scope="col">Name</th>
+                    <th scope="col">Nombres</th>
                     <th scope="col">Email</th>
                     <th scope="col" colspan="2">Acciones</th>
                   </tr>

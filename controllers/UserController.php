@@ -82,11 +82,12 @@ class UserController
   }
 
   // Respuesta JSON centralizada
-  private function jsonResponse($data, $statusCode = 200)
+  private function jsonResponse($data, $status = 200)
   {
     header('Content-Type: application/json');
-    http_response_code($statusCode);
+    http_response_code($status);
     echo json_encode($data);
+    exit;
   }
 
   // Manejo centralizado de errores
