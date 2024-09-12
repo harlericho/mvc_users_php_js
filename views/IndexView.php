@@ -20,7 +20,8 @@
         <div class="card">
           <div class="card-body">
             <h5 class="card-title">Formulario</h5>
-            <form id="form" action="javascript:void(0);" method="post" onsubmit="app.submit()">
+            <!-- <form id="form" action="javascript:void(0);" method="post" onsubmit="app.submit()"> -->
+            <form id="form" action="javascript:void(0);" method="post">
               <input type="hidden" id="id" name="id">
               <div class="mb-3">
                 <label for="name" class="form-label">Nombres:</label>
@@ -31,7 +32,8 @@
                 <input type="email" class="form-control" id="email" name="email">
               </div>
               <button type="submit" class="btn btn-primary btn-sm" id="btnSubmit">Guardar</button>
-              <button type="button" class="btn btn-success btn-sm" onclick="app.clean()">Nuevo</button>
+              <!-- <button type="button" class="btn btn-success btn-sm" onclick="app.clean()">Nuevo</button> -->
+              <button type="button" class="btn btn-success btn-sm" id="btnClean">Nuevo</button>
             </form>
           </div>
         </div>
@@ -65,7 +67,8 @@
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
   </script>
-  <script src="../assets/CodeAsset.js"></script>
+  <!-- <script src="../assets/CodeAsset.js"></script> -->
+  <script type="module" src="../assets/AppAsset.js"></script>
 </body>
 
 </html>
