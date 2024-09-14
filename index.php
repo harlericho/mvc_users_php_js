@@ -1,7 +1,13 @@
 <?php
+define('BASE_PATH', __DIR__);
+require_once BASE_PATH . '/config/db.php';
+require_once BASE_PATH . '/app/controllers/UserController.php';
+require_once BASE_PATH . '/app/models/UserModel.php';
+
 // Llamar al UserController y la configuración de la base de datos
-require_once "config/db.php";
-require_once "controllers/UserController.php";
+// require_once "config/db.php";
+// require_once "app/controllers/UserController.php";
+
 
 // Instancia del controlador
 $userController = new UserController();

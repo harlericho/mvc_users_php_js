@@ -1,0 +1,20 @@
+/* estilo al footer */
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  font-size: medium;
+  padding: 10px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+.iconoformulario {
+  /* cambiar tamaño de icono */
+  width: 30px;
+}
+.iconolistado {
+  /* cambiar tamaño de icono */
+  width: 30px;
+}

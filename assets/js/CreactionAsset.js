@@ -2,7 +2,7 @@ import { fetchData } from "./CodeAsset.js";
 import { listado } from "./ListAsset.js";
 import { showAlert, handleError } from "./MessageAsset.js";
 import { clean } from "./CleanAsset.js";
-import { routes } from "./RoutesAsset.js";
+import { routes } from "../../routes/RoutesAsset.js";
 const submit = async () => {
   const form = new FormData(document.getElementById("form"));
   const name = form.get("name");

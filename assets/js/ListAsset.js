@@ -1,7 +1,8 @@
 import { fetchData } from "./CodeAsset.js";
 import { handleError } from "./MessageAsset.js";
-import { routes } from "./RoutesAsset.js";
+import { routes } from "../../routes/RoutesAsset.js";
 const tbody = document.getElementById("tbody");
+const total = document.getElementById("total");
 
 const renderTable = (data) => {
   if (data.length) {
@@ -31,6 +32,7 @@ const renderTable = (data) => {
         </tr>
       `;
   }
+  total.textContent = data.length;
 };
 
 const listado = async () => {

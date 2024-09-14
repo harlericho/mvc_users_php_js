@@ -1,6 +1,4 @@
 <?php
-require_once "models/UserModel.php";
-
 class UserController
 {
   private $model;
@@ -13,7 +11,7 @@ class UserController
   // Método para mostrar la vista principal
   public function index()
   {
-    require_once "views/IndexView.php";
+    require_once BASE_PATH . '/app/views/IndexView.php';
   }
 
   // Listado de todos los usuarios
@@ -30,7 +28,7 @@ class UserController
   // Mostrar el formulario para crear un nuevo usuario
   public function create()
   {
-    require_once "views/create.view.php";
+    require_once "../views/create.view.php";
   }
 
   // Guardar un nuevo usuario en la base de datos

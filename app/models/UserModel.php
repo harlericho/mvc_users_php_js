@@ -12,7 +12,7 @@ class UserModel
   // Llamar al archivo de configuracion .ini
   private function getTableConfig()
   {
-    $route = __DIR__ . '/../init/table.ini';
+    $route = BASE_PATH . '/config/init/table.ini';
     $config = parse_ini_file($route, true);
 
     if (!$config || !isset($config['table']['table1'])) {

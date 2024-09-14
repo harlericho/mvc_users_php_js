@@ -43,7 +43,7 @@ class Db
   }
   private function getConfig()
   {
-    $route = __DIR__ . '/../init/config.ini';
+    $route = BASE_PATH . '/config/init/config.ini';
     $config = parse_ini_file($route, true);
 
     if (!$config || !isset($config['database'])) {

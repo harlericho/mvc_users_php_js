@@ -1,7 +1,7 @@
 import { fetchData } from "./CodeAsset.js";
 import { listado } from "./ListAsset.js";
 import { showAlert, handleError } from "./MessageAsset.js";
-import { routes } from "./RoutesAsset.js";
+import { routes } from "../../routes/RoutesAsset.js";
 const deleteUser = async (id) => {
   if (confirm("¿Está seguro de eliminar el registro?")) {
     // const url = `../index.php?action=delete&id=${id}`;
